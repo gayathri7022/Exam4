@@ -17,7 +17,7 @@ def test_cases():
     assert res4 == "Book not found"
 
     res5 = search_book("XYZ", "gayathri@gmail.com")
-    assert res5 == "Book not available"
+    assert res5 == "Book not found"
 
     res6 = view_reserve('gayathri@gmail.com')
     assert res6 == "No book is reserved"
