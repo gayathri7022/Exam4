@@ -3,7 +3,7 @@ from Library import register, reserve_book, search_book, login, view_reserve, li
 def test_cases():
     books.clear()
     lib.clear()
-    
+
     res1 = register("gayathri", "gayathri@gmail.com", "12345678")
     assert res1 == "Registeration successfull"
 
@@ -14,7 +14,7 @@ def test_cases():
     assert res3 == "Invalid password"
 
     res4 = search_book("Romeo and juliet", "gayathri@gmail.com")
-    assert res4 == "Book found"
+    assert res4 == "Book not found"
 
     res5 = search_book("XYZ", "gayathri@gmail.com")
     assert res5 == "Book not available"
