@@ -1,7 +1,6 @@
 from Library import register, reserve_book, search_book, login, view_reserve, lib, books
 
 def test_cases():
-    books.clear()
     lib.clear()
     res1 = register("gayathri", "gayathri@gmail.com", "12345678")
     assert res1 == "Registeration successfull"
